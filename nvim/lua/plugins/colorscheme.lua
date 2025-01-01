@@ -5,6 +5,7 @@ return {
   "ellisonleao/gruvbox.nvim",
   "EdenEast/nightfox.nvim",
   "rebelot/kanagawa.nvim",
+  "vague2k/vague.nvim",
   lazy = true,
   priority = 1000,
   opts = function()
@@ -15,7 +16,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "kanagawa",
+      colorscheme = "solarized-osaka",
     },
   },
 }
