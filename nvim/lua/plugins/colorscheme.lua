@@ -8,6 +8,7 @@ return {
     "rebelot/kanagawa.nvim",
     "vague2k/vague.nvim",
     "ellisonleao/gruvbox.nvim",
+    "techtuner/aura-neovim",
     lazy = false,
     priority = 1000,
     opts = {
@@ -80,7 +81,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "aura",
       -- colorscheme = "solarized-osaka",
     },
   },

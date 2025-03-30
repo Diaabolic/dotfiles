@@ -41,6 +41,16 @@ keymap.set("n", "<C-w><down>", "<C-w>-")
 -- SplitTerm
 keymap.set("n", "<C-/", "vsp +term")
 
+-- Go back to the terminal from Normal mode
+vim.keymap.set("n", "<C-Tab>", function()
+  for _, win in ipairs(vim.api.nvim_list_wins()) do
+    if vim.api.nvim_buf_get_option(vim.api.nvim_win_get_buf(win), "buftype") == "terminal" then
+      vim.api.nvim_set_current_win(win)
+      return
+    end
+  end
+end, { desc = "Switch to terminal" })
+
 -- Diagnostics
 keymap.set("n", "<C-j>", function()
   vim.diagnostic.goto_next()
