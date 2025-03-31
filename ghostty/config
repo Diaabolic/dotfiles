@@ -1,0 +1,18 @@
+font-size = 20
+font-family = PlemolJPConsoleNF-Regular
+theme = Aura
+background-opacity = 0.9
+background-blur-radius = 20
+shell-integration-features = no-cursor,sudo
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+window-padding-balance = true
+window-save-state = always
+window-decoration = none
+window-colorspace = display-p3
+gtk-titlebar = false
+macos-titlebar-style = hidden
+gtk-tabs-location = hidden
+
+macos-option-as-alt = left
